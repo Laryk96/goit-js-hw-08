@@ -5,7 +5,7 @@ const form = document.querySelector('.feedback-form');
 const LocalData = {};
 
 form.addEventListener('submit', onSubmitForm);
-form.addEventListener('input', throttle(onInputForm, 300));
+form.addEventListener('input', throttle(onInputForm, 500));
 
 updateForm();
 
