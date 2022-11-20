@@ -11,10 +11,10 @@ updateForm();
 function onSubmitForm(e) {
   e.preventDefault();
 
+  console.log(JSON.parse(localStorage.getItem(KEY_STORAGE)));
+
   e.currentTarget.reset();
   localStorage.removeItem(KEY_STORAGE);
-
-  console.log(localData);
 }
 
 function onInputForm(e) {
